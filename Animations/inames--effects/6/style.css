@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #444;
+}
+
+.contener {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+    border: 5px solid white;
+}
+
+.contener img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.contener:hover img {
+    transform: rotate(9deg) scale(1.2);
+}

@@ -1,0 +1,224 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/******************************/
+/*         first link         */
+
+.firsHover {
+    font-size: 2.4rem;
+    border: 2px solid black;
+    padding: 1.6rem 3.2rem;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-top: 120px;
+    width: fit-content;
+    transition: all 2s;
+    overflow: hidden;
+}
+
+.firsHover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transform: rotate(-90deg);
+    transform-origin: bottom left;
+    transition: all 1s;
+    z-index: -1;
+}
+
+.firsHover:hover:before {
+    transform: rotate(0deg);
+}
+
+.firsHover:hover {
+    color: rgb(255, 255, 255);
+}
+
+/******************************/
+/*         second link         */
+
+.secondHover {
+    font-size: 2.4rem;
+    border: 2px solid black;
+    padding: 1.6rem 3.2rem;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-top: 120px;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.secondHover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    z-index: -1;
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.secondHover:hover:before {
+    transform: translateX(0);
+}
+
+.secondHover {
+    transition: all 2s;
+}
+
+.secondHover:hover {
+    color: rgb(255, 255, 255);
+}
+
+/******************************/
+/*         third link         */
+
+.thirdHover {
+    font-size: 2.4rem;
+    border: 2px solid black;
+    padding: 1.6rem 3.2rem;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-top: 120px;
+    width: fit-content;
+    /* overflow: hidden; */
+    transition: 1s;
+}
+
+.thirdHover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transform: rotateX(90deg);
+    transition: 1s;
+    z-index: -1;
+}
+
+.thirdHover:hover:after {
+    transform: rotate(0deg);
+}
+
+.thirdHover:hover {
+    color: white;
+}
+
+/******************************/
+/*         fourth link         */
+
+.fourthHover {
+    font-size: 2.4rem;
+    border: 2px solid black;
+    padding: 1.6rem 3.2rem;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-top: 120px;
+    width: fit-content;
+    /* overflow: hidden; */
+    transition: 1s;
+}
+
+.fourthHover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transform: rotateY(90deg);
+    transition: 1s;
+    z-index: -1;
+}
+
+.fourthHover:hover:after {
+    transform: rotate(0deg);
+}
+
+.fourthHover:hover {
+    color: white;
+}
+
+/******************************/
+/*        sixthHover link     */
+
+.sixthHover {
+    font-size: 2.4rem;
+    border: 2px solid black;
+    padding: 1.6rem 3.2rem;
+    font-weight: bold;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    margin-top: 120px;
+    width: fit-content;
+    /* overflow: hidden; */
+    transition: 0.5s;
+}
+
+.sixthHover:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transform: rotateX(90deg);
+    transition: 1s;
+    z-index: -1;
+}
+
+.sixthHover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #262626;
+    transform: rotateY(90deg);
+    transition: 1s;
+    z-index: -1;
+}
+
+.sixthHover:hover:after {
+    transform: rotateX(0deg);
+}
+
+.sixthHover:hover::before {
+    transform: rotateY(0deg);
+}
+
+.sixthHover:hover {
+    color: white;
+}

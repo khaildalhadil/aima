@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عنوان الصفحة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        main {
+            padding: 80px 20px 20px;
+            margin-top: 60px;
+            text-align: center;
+            color: #007bff; /* تغيير لون النص إلى الأزرق */
+        }
+        .animated-image {
+            width: 200px;
+            height: auto;
+            animation: rotate 4s linear infinite;
+        }
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>عنوان الموقع</h1>
+        <nav>
+            <ul>
+                <li><a href="#">الصفحة الرئيسية</a></li>
+                <li><a href="#">عن الموقع</a></li>
+                <li><a href="#">اتصل بنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>مرحباً بك في موقعنا!</h2>
+            <img src="https://llllline.com/images/thumbs/moon/moon-transparent-background-png-0000054869-415.jpeg" alt="رسوم متحركة" class="animated-image">
+            <p>أنا خالد الهادي، عمري 20 عامًا، وتخصصي كمبيوتر ساينس.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>حقوق الطبع محفوظة &copy; 2024</p>
+    </footer>
+</body>
+</html>
